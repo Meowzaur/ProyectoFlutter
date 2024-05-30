@@ -13,8 +13,8 @@ class Creditos extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              '¡21!',
-              style: TextStyle(fontSize: 120.0),
+              '¡ 21!',
+              style: TextStyle(fontSize: 150.0, fontFamily: 'Poker'),
             ),
             SizedBox(height: 70),
             Text(
@@ -23,7 +23,10 @@ class Creditos extends StatelessWidget {
             ),
             Text(
               'Pablo Bruno Mimbrera',
-              style: TextStyle(fontSize: 30.0),
+              style: TextStyle(
+                fontSize: 30.0,
+                color: Colors.white, // Cambia "Colors.blue" al color que desees
+              ),
             ),
           ],
         ),
