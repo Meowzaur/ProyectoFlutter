@@ -1,40 +1,34 @@
-import 'package:flutter/foundation.dart';
 import 'package:veintiuno/modelos/baraja.dart';
 
 class Mano {
+  // Lista de enteros.
   List<int> cartasEnMano;
+  // Variable booleana para indicar si el jugador decide pasar su turno.
   bool pasar;
 
+  // Constructor.
   Mano()
-      : cartasEnMano = <int>[],
+      : cartasEnMano = <int>[], // Inicializa como una lista vacía.
         pasar = false;
 
+  // Método para robar una carta de la baraja.
   void robarCarta(Baraja baraja) {
+    // Verifica si la baraja tiene cartas disponibles.
     if (baraja.cartas.isNotEmpty) {
+      // Agrega la última carta de la baraja a la mano del jugador.
       cartasEnMano.add(baraja.cartas.removeLast());
+      // Indica que el jugador no está pasando su turno.
       pasar = false;
-    } else {
-      if (kDebugMode) {
-        print('La baraja está vacía. No se pueden robar más cartas.');
-      }
     }
   }
 
+  // Método para pasar el turno.
   void pasarTurno() {
+    // Establece 'pasar' como true.
     pasar = true;
   }
 
-  void mostrarCartasEnMano() {
-    if (kDebugMode) {
-      print('Cartas en la mano:');
-    }
-    for (int i = 0; i < cartasEnMano.length; i++) {
-      if (kDebugMode) {
-        print('${i + 1}: ${cartasEnMano[i]}');
-      }
-    }
-  }
-
+  // Método para obtener el estado de 'pasar'.
   bool suEstado() {
     return pasar;
   }

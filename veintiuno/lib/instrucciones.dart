@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// Clase que muestra la ventana Instrucciones. Muestra varios textos y en el AppBar hay un botón de retroceso.
 class Instrucciones extends StatelessWidget {
   const Instrucciones({super.key});
 

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// Clase que muestra la ventana Creditos. Muestra 3 textos y en el AppBar hay un botón de retroceso.
 class Creditos extends StatelessWidget {
   const Creditos({super.key});
 
@@ -25,7 +26,7 @@ class Creditos extends StatelessWidget {
               'Pablo Bruno Mimbrera',
               style: TextStyle(
                 fontSize: 30.0,
-                color: Colors.white, // Cambia "Colors.blue" al color que desees
+                color: Colors.white,
               ),
             ),
           ],

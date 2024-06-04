@@ -89,6 +89,9 @@ flutter:
     - family: Poker
       fonts:
         - asset: assets/fonts/Poker.ttf
+    - family: Numeros
+      fonts:
+        - asset: assets/fonts/Numeros.otf
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
